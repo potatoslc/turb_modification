@@ -41,5 +41,6 @@ def modify(df,shape):
     new_df[' u'].loc[new_df['# x']>cutoff ]=0
     new_df[' v'].loc[new_df['# x']>cutoff ]=0
     new_df[' w'].loc[new_df['# x']>cutoff ]=0
+    new_df.to_csv('test1.dat',sep=',',index = False)
     
     return new_df
